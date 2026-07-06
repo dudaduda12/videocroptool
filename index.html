@@ -122,7 +122,20 @@
   display: flex;
   justify-content: center;
 }
+	  /* Prilagođeni kontejner za oglas right */
+.fixed-banner-right {
+    position: fixed; /* Ovo ga lepi za ekran, ne za stranicu */
+    top: 100px;      /* Odmak od vrha ekrana */
+    right: 20px;     /* Odmak od desne ivice */
+    z-index: 9999;   /* Da uvek bude iznad sadržaja */
+}
 
+/* OVO JE KLJUČNO: Sakrij baner na mobilnom da ne smeta */
+@media only screen and (max-width: 1024px) {
+    .fixed-banner-right {
+        display: none;
+    }
+}
 /* Prilagođeni kontejner za oglas */
 .ad-slot-inner {
   background: var(--glass);
