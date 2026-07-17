@@ -25,7 +25,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css" /> 
   <link rel="icon" type="image/png" href="/favicon.png">
 
   <!-- Structured Data: SoftwareApplication -->
@@ -68,6 +68,19 @@
         display: none;
       }
     }
+	.fixed-banner-left {
+    position: fixed; /* Го лепи за екран */
+    top: 100px;      /* Ист одмак од врвот */
+    left: 20px;      /* Одмак од ЛЕВАТА ивица */
+    z-index: 9999;   /* Да биде над содржината */
+}
+
+/* Го криеме и левиот на мобилен */
+@media only screen and (max-width: 1024px) {
+    .fixed-banner-left {
+        display: none;
+    }
+}
   </style>
 </head>
 <body>
@@ -84,13 +97,23 @@
 </script>
 <script src="https://globalimmaturelunatic.com/f83edbdafdfc06a09e4073273fb32715/invoke.js"></script>
 
-    <div id="adsterra-banner"> ... tvoj kod ... </div>
+    <div id="adsterra-banner"> </div>
 </div>
-</head>
-<body>
-<div class="fixed-banner-right">
-    <!-- Ovde ubaci Adsterra baner kod (npr. 300x250) -->
-    <div id="adsterra-banner"> ... tvoj kod ... </div>
+
+<div class="fixed-banner-left">
+    <!-- Ovde ubaci Adsterra baner kod (npr. 300x250) --> 
+	<script>
+  atOptions = {
+    'key' : 'd4d12f340b17d700e2cd54e6b10710d8',
+    'format' : 'iframe',
+    'height' : 600,
+    'width' : 160,
+    'params' : {}
+  };
+</script>
+<script src="https://globalimmaturelunatic.com/d4d12f340b17d700e2cd54e6b10710d8/invoke.js"></script>
+
+    <div id="adsterra-banner"> </div>
 </div>
   <!-- NAV -->
   <nav class="navbar" id="navbar">
@@ -448,6 +471,17 @@
           </div>
         </div>
       </div>
+	  <script>
+  atOptions = {
+    'key' : '99c23fe066427c5756852d7d30bcb75f',
+    'format' : 'iframe',
+    'height' : 50,
+    'width' : 320,
+    'params' : {}
+  };
+</script>
+<script src="https://globalimmaturelunatic.com/99c23fe066427c5756852d7d30bcb75f/invoke.js"></script>
+
 
     </div>
   </section>
