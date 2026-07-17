@@ -81,6 +81,15 @@
         display: none;
     }
 }
+.fixed-banner-bottom {
+    position: fixed;
+    bottom: 10px;        /* 10 пиксели оддалеченост од самото дно на екранот */
+    left: 50%;           /* Го носи почетокот на банерот точно на средина */
+    transform: translateX(-50%); /* Го влече назад за половина од неговата должина за да биде совршено центриран */
+    z-index: 9999;       /* Да се гледа секогаш најгоре над содржината */
+    display: flex;
+    justify-content: center;
+}
   </style>
 </head>
 <body>
@@ -471,19 +480,19 @@
           </div>
         </div>
       </div>
-	  <script>
-  atOptions = {
-    'key' : '99c23fe066427c5756852d7d30bcb75f',
-    'format' : 'iframe',
-    'height' : 50,
-    'width' : 320,
-    'params' : {}
-  };
-</script>
-<script src="https://globalimmaturelunatic.com/99c23fe066427c5756852d7d30bcb75f/invoke.js"></script>
-
-
-    </div>
+	  <!-- ФИКСЕН БАНЕР НА СРЕДИНА НА ЕКРАНОТ (ДОЛУ) -->
+<div class="fixed-banner-bottom">
+    <script>
+    atOptions = {
+        'key' : '99c23fe066427c5756852d7d30bcb75f',
+        'format' : 'iframe',
+        'height' : 50,
+        'width' : 320,
+        'params' : {}
+    };
+    </script>
+    <script src="https://globalimmaturelunatic.com/99c23fe066427c5756852d7d30bcb75f/invoke.js"></script>
+</div>
   </section>
 
   <!-- FFMPEG LOADING OVERLAY -->
